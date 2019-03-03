@@ -1,0 +1,30 @@
+{
+    "name": "namet117/laravel-filesystem-oss",
+    "description": "A Laravel Plugin to Use Aliyun-OSS",
+    "keywords": ["nameT", "Aliyun", "oss", "laravel", "FileSystem"],
+    "authors": [
+        {
+            "name": "namet117",
+            "email": "namet117@163.com",
+            "homepage": "https://namet.xyz"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9",
+        "league/flysystem": "^1.0",
+        "namet/oss": "^0.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Namet\\LaravelFilesystem\\Oss\\": "src"
+        }
+    },
+    "license": "MIT",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Namet\\LaravelFilesystem\\Oss\\OssStorageServiceProvider"
+            ]
+        }
+    }
+}
