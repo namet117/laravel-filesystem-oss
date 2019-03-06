@@ -4,14 +4,14 @@ namespace Namet\FileSystem\Oss;
 
 use Illuminate\Support\ServiceProvider;
 use League\Flysystem\Filesystem;
-use Namet\Oss\OssManager;
+use Namet\Oss\Drivers\Oss;
 
 class OssStorageServiceProvider extends ServiceProvider
 {
     public function boot()
     {
         app('filesystem')->extend('alioss', function ($app, $config) {
-            $instance = new OssManager('oss', $config);
+            $instance = new Oss($config);
             $filesystem = new FileSystem($instance);
             return $filesystem;
         });
