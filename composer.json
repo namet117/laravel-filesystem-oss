@@ -16,14 +16,14 @@
     },
     "autoload": {
         "psr-4": {
-            "Namet\\LaravelFilesystem\\Oss\\": "src"
+            "Namet\\LaravelFilesystem\\": "src"
         }
     },
     "license": "MIT",
     "extra": {
         "laravel": {
             "providers": [
-                "Namet\\LaravelFilesystem\\Oss\\OssStorageServiceProvider"
+                "Namet\\LaravelFilesystem\\OssStorageServiceProvider"
             ]
         }
     }
