@@ -2,11 +2,11 @@
 
 namespace Namet\LaravelFilesystem;
 
-// use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\ServiceProvider;
 use League\Flysystem\Filesystem;
 use Namet\Oss\Drivers\Oss;
 
-class OssStorageServiceProvider //extends ServiceProvider
+class OssStorageServiceProvider extends ServiceProvider
 {
     public function boot()
     {
